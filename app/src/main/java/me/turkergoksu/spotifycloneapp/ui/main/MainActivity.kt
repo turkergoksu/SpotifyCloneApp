@@ -1,4 +1,4 @@
-package me.turkergoksu.spotifycloneapp.main
+package me.turkergoksu.spotifycloneapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

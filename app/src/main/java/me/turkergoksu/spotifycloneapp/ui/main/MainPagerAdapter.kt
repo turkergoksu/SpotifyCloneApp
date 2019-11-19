@@ -1,12 +1,12 @@
-package me.turkergoksu.spotifycloneapp.main
+package me.turkergoksu.spotifycloneapp.ui.main
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import me.turkergoksu.spotifycloneapp.R
-import me.turkergoksu.spotifycloneapp.favorites.FavoritesFragment
-import me.turkergoksu.spotifycloneapp.radios.RadiosFragment
+import me.turkergoksu.spotifycloneapp.ui.favorites.FavoritesFragment
+import me.turkergoksu.spotifycloneapp.ui.radios.RadiosFragment
 import java.lang.IllegalStateException
 
 /**

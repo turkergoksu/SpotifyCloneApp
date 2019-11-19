@@ -1,4 +1,4 @@
-package me.turkergoksu.spotifycloneapp
+package me.turkergoksu.spotifycloneapp.data.remote
 
 /**
  * Created by turkergoksu on 17-Nov-19.

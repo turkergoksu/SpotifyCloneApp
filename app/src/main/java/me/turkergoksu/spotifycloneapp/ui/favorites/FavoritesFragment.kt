@@ -1,4 +1,4 @@
-package me.turkergoksu.spotifycloneapp.favorites
+package me.turkergoksu.spotifycloneapp.ui.favorites
 
 import android.os.Bundle
 import android.view.LayoutInflater
