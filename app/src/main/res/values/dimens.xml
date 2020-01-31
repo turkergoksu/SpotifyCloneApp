@@ -18,4 +18,6 @@
     <dimen name="sizeBottomPlayer">64dp</dimen>
     <dimen name="sizeBottomPlayerIcon">48dp</dimen>
     <dimen name="sizeBottomPlayerAction">24dp</dimen>
+
+    <dimen name="sizeRadioAvatar">96dp</dimen>
 </resources>

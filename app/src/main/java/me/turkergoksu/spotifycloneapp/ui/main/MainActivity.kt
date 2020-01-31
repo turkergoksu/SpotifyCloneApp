@@ -2,9 +2,10 @@ package me.turkergoksu.spotifycloneapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentStatePagerAdapter
-import kotlinx.android.synthetic.main.activity_main.*
 import me.turkergoksu.spotifycloneapp.R
+import me.turkergoksu.spotifycloneapp.databinding.ActivityMainBinding
 
 /**
  * Created by turkergoksu on 17-Nov-19.
@@ -12,17 +13,18 @@ import me.turkergoksu.spotifycloneapp.R
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        val pagerAdapter = MainPagerAdapter(
+        binding.viewPager.adapter = MainPagerAdapter(
             this,
             supportFragmentManager,
             FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
         )
 
-        viewPager.adapter = pagerAdapter
-        tabLayout.setupWithViewPager(viewPager)
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
     }
 }
